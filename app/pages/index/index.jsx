@@ -1,4 +1,6 @@
 import React from 'react';
+import {Dropdown, DropdownToggle, DropdownMenu, DropdownItem} from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/main.css';
 import './css/index.css';
 
@@ -7,8 +9,15 @@ export class Index extends React.Component {
         super(props);
 
         this.state = {
-            message: this.props.message || 'This is a default message'
+            message: this.props.message || 'This is a default message',
+            dropdownOpen: false
         };
+    }
+
+    toggle() {
+        this.setState(prevState => ({
+            dropdownOpen: !prevState.dropdownOpen
+        }));
     }
 
     render() {
@@ -17,38 +26,37 @@ export class Index extends React.Component {
                 <div id="page-wrapper">
                     <div id="header-wrapper">
                         <div id="header" className="container">
-                            <h1 id="logo"><a>Handy Hands</a></h1>
                             <nav id="nav">
-                                <ul>
+                                <ul className="flex-content">
                                     <li>
-                                        <a href="#">Dropdown</a>
-                                        <ul>
-                                            <li><a href="#">Lorem ipsum dolor</a></li>
-                                            <li><a href="#">Magna phasellus</a></li>
-                                            <li><a href="#">Etiam dolore nisl</a></li>
-                                            <li>
-                                                <a href="#">Phasellus consequat</a>
-                                                <ul>
-                                                    <li><a href="#">Lorem ipsum dolor</a></li>
-                                                    <li><a href="#">Phasellus consequat</a></li>
-                                                    <li><a href="#">Magna phasellus</a></li>
-                                                    <li><a href="#">Etiam dolore nisl</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#">Veroeros feugiat</a></li>
-                                        </ul>
+                                        <Dropdown className="dropdown services-dropdown" isOpen={this.state.dropdownOpen}
+                                                  toggle={this.toggle.bind(this)}>
+                                            <span className="dropdown-title">Services</span>
+                                            <DropdownToggle caret color="secondary" className="dropdown-toggle"/>
+                                            <DropdownMenu>
+                                                <DropdownItem><a href="#">Alzheimer’s & Dementia</a></DropdownItem>
+                                                <DropdownItem><a href="#">Post-surgery & Rehab</a></DropdownItem>
+                                                <DropdownItem><a href="#">Neuromuscular</a></DropdownItem>
+                                                <DropdownItem><a href="#">Adults With Disabilities</a></DropdownItem>
+                                                <DropdownItem><a href="#">Fall Prevention & Recovery</a></DropdownItem>
+                                                <DropdownItem><a href="#">Homecare Resources</a></DropdownItem>
+                                            </DropdownMenu>
+                                        </Dropdown>
                                     </li>
-                                    <li><a>Left Sidebar</a></li>
-                                    <li className="break"><a>Right Sidebar</a></li>
-                                    <li><a>No Sidebar</a></li>
+                                    <li><a href="#">Compassionate Care</a></li>
+                                    <li><a href="#">Home making Care</a></li>
+                                    <li><a href="#">Hospice Care</a></li>
+                                    <li className="logo"><h1><a>Handy Hands</a></h1></li>
+                                    <li><a href="#">Live in & overnight Care</a></li>
+                                    <li><a href="#">Personal Care</a></li>
+                                    <li><a href="#">Respite Care</a></li>
+                                    <li><a href="#">Careers</a></li>
                                 </ul>
                             </nav>
 
                         </div>
                         <section id="hero" className="container">
-                            <header>
-                                <h2>Handy Hands</h2>
-                            </header>
+                            <br/>
                             <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel
                                 sem sit dolor neque semper magna. Lorem ipsum dolor sit amet consectetur et sed
                                 adipiscing elit. Curabitur vel sem sit.</p>

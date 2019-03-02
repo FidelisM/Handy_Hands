@@ -45,3 +45,52 @@
 .home-page .pic-073 {
     background-image: url("images/pic07.jpg");
 }
+
+.home-page .flex-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.home-page #nav li:not(.logo) a {
+    font-weight: 400;
+}
+
+.home-page .logo a {
+    width: 10em;
+    height: 4em;
+    line-height: 4em;
+    background: rgba(255, 255, 255, 0.15);
+    border: solid 1px;
+    border-color: #fff;
+    border-color: rgba(255, 255, 255, 0.75);
+    border-top: 0;
+    border-radius: 0 0 0.35em 0.35em;
+    color: #fff;
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.home-page .dropdown-toggle,
+.home-page .dropdown-title {
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+.home-page .dropdown-toggle:active,
+.home-page .dropdown-toggle:hover,
+.home-page .dropdown-toggle:focus,
+.home-page .services-dropdown .show > .btn-secondary.dropdown-toggle {
+    color: #fff !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.home-page .dropdown-title {
+    font-weight: 400;
+    margin-right: 5px;
+}
