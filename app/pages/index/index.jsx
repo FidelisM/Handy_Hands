@@ -9,7 +9,6 @@ export class Index extends React.Component {
         super(props);
 
         this.state = {
-            message: this.props.message || 'This is a default message',
             dropdownOpen: false
         };
     }
