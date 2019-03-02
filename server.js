@@ -1,8 +1,9 @@
 var express = require('express'),
-    app = express();
+    app = express(),
+    port = process.env.PORT || 3000;
 
 app.use(express.static('dist'));
 
-app.listen(3000, function () {
-    console.log('Server is running on http://localhost:3000')
+app.listen(port, function () {
+    console.log('Server is running on port: ' + port);
 });
