@@ -43,14 +43,14 @@ export class Index extends React.Component {
                                             </DropdownMenu>
                                         </Dropdown>
                                     </li>
-                                    <li><a href="#">Compassionate Care</a></li>
-                                    <li><a href="#">Home making Care</a></li>
-                                    <li><a href="#">Hospice Care</a></li>
-                                    <li className="logo"><h1><a>Handy Hands</a></h1></li>
-                                    <li><a href="#">Live in & overnight Care</a></li>
-                                    <li><a href="#">Personal Care</a></li>
-                                    <li><a href="#">Respite Care</a></li>
-                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#" tabIndex="0">Compassionate Care</a></li>
+                                    <li><a href="#" tabIndex="0">Home making Care</a></li>
+                                    <li><a href="#" tabIndex="0">Hospice Care</a></li>
+                                    <li className="logo"><h1><a tabIndex="0">Handy Hands</a></h1></li>
+                                    <li><a href="#" tabIndex="0">Live in & overnight Care</a></li>
+                                    <li><a href="#" tabIndex="0">Personal Care</a></li>
+                                    <li><a href="#" tabIndex="0">Respite Care</a></li>
+                                    <li><a href="#" tabIndex="0">Careers</a></li>
                                 </ul>
                             </nav>
 
