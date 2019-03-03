@@ -9,7 +9,8 @@ module.exports = {
     },
     resolve: {
         alias: {
-            Components: path.resolve(__dirname, './app/components')
+            Pages: path.resolve(__dirname, './app/pages'),
+            Assets: path.resolve(__dirname, './app/assets')
         },
         extensions: ['.js', '.jsx']
     },
@@ -43,8 +44,10 @@ module.exports = {
                 use: {
                     loader: 'file-loader',
                     options: {
-                        name: './dist/fonts/[name].[ext]',
-                    },
+                        name: './[name].[ext]',
+                        outputPath: './dist/fonts/',
+                        publicPath: './fonts/'
+                    }
                 },
             },
             {
@@ -56,6 +59,19 @@ module.exports = {
                             name: './[name].[ext]',
                             outputPath: './dist/images/',
                             publicPath: './images/'
+                        }
+                    }
+                ]
+            },
+            {
+                test: /favicon.png/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: './[name].[ext]',
+                            outputPath: './dist/',
+                            publicPath: './'
                         }
                     }
                 ]

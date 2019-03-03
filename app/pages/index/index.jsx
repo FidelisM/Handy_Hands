@@ -1,8 +1,8 @@
 import React from 'react';
 import {Dropdown, DropdownToggle, DropdownMenu, DropdownItem} from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './css/main.css';
-import './css/index.css';
+import 'Assets/css/main.css';
+import './index.css';
 
 export class Index extends React.Component {
     constructor(props) {
