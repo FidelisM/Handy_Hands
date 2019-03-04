@@ -54,7 +54,7 @@
 
 .home-page #nav li a:focus,
 .home-page #nav li a:active {
-    outline: 2px solid white;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
 }
 
 .home-page #nav li:not(.logo) a {
@@ -87,18 +87,12 @@
     outline: 0;
 }
 
-/*
 .home-page .dropdown-toggle:active,
 .home-page .dropdown-toggle:hover,
 .home-page .dropdown-toggle:focus,
 .home-page .services-dropdown .show > .btn-secondary.dropdown-toggle {
-    color: #fff !important;
-    background-color: transparent !important;
-    border-color: transparent !important;
-    outline: 2px solid white !important;
-    box-shadow: 0 0 0 0 white !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5) !important;
 }
-*/
 
 .home-page .dropdown-title {
     font-weight: 400;
