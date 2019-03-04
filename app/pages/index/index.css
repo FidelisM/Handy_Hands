@@ -87,6 +87,7 @@
     outline: 0;
 }
 
+/*
 .home-page .dropdown-toggle:active,
 .home-page .dropdown-toggle:hover,
 .home-page .dropdown-toggle:focus,
@@ -97,6 +98,7 @@
     outline: 2px solid white !important;
     box-shadow: 0 0 0 0 white !important;
 }
+*/
 
 .home-page .dropdown-title {
     font-weight: 400;

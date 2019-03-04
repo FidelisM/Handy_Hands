@@ -28,17 +28,21 @@ export class Index extends React.Component {
                             <nav id="nav">
                                 <ul className="flex-content">
                                     <li>
-                                        <Dropdown className="dropdown services-dropdown" isOpen={this.state.dropdownOpen}
+                                        <Dropdown className="dropdown services-dropdown"
+                                                  isOpen={this.state.dropdownOpen}
                                                   toggle={this.toggle.bind(this)}>
                                             <span className="dropdown-title">Services</span>
-                                            <DropdownToggle caret color="secondary" className="dropdown-toggle"/>
+                                            <DropdownToggle caret={true} color="light" className="dropdown-toggle"/>
                                             <DropdownMenu>
-                                                <DropdownItem><a href="#">Alzheimer’s & Dementia</a></DropdownItem>
-                                                <DropdownItem><a href="#">Post-surgery & Rehab</a></DropdownItem>
-                                                <DropdownItem><a href="#">Neuromuscular</a></DropdownItem>
-                                                <DropdownItem><a href="#">Adults With Disabilities</a></DropdownItem>
-                                                <DropdownItem><a href="#">Fall Prevention & Recovery</a></DropdownItem>
-                                                <DropdownItem><a href="#">Homecare Resources</a></DropdownItem>
+                                                <DropdownItem className="btn-light">Alzheimer’s &
+                                                    Dementia</DropdownItem>
+                                                <DropdownItem className="btn-light">Post-surgery & Rehab</DropdownItem>
+                                                <DropdownItem className="btn-light">Neuromuscular</DropdownItem>
+                                                <DropdownItem className="btn-light">Adults With
+                                                    Disabilities</DropdownItem>
+                                                <DropdownItem className="btn-light">Fall Prevention &
+                                                    Recovery</DropdownItem>
+                                                <DropdownItem className="btn-light">Homecare Resources</DropdownItem>
                                             </DropdownMenu>
                                         </Dropdown>
                                     </li>
