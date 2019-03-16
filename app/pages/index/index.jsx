@@ -10,12 +10,18 @@ import {Hospice} from 'Pages/hospice/hospice';
 import {LiveIn} from 'Pages/live_in/live_in';
 import {Personal} from 'Pages/personal/personal';
 import {Respite} from 'Pages/respite/respite';
+import {Contact} from 'Pages/contact_us/contact_us';
+import {Alzheimer} from 'Pages/alzheimer/alzheimer';
+import {Rehab} from 'Pages/rehab/rehab';
+import {Neuromuscular} from 'Pages/neuromuscular/neuromuscular';
+import {Disabilities} from 'Pages/disabilities/disabilities';
+import {Fall} from 'Pages/fall/fall';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'Assets/css/main.css';
 import 'CSS/styles.css';
 import './index.css';
-import {Contact} from "Pages/contact_us/contact_us";
+
 
 export class Index extends React.Component {
     constructor(props) {
@@ -28,7 +34,7 @@ export class Index extends React.Component {
 
     componentDidMount() {
         let container = document.getElementById('home-content'),
-        footer = document.getElementById('footer-wrapper');
+            footer = document.getElementById('footer-wrapper');
 
         ReactDOM.render(<HomePage/>, container);
         ReactDOM.render(<Contact/>, footer);
@@ -76,6 +82,41 @@ export class Index extends React.Component {
         }
     }
 
+    _handleDropdownClick(page) {
+        let container = document.getElementById('home-content');
+
+        this.setState({
+            dropdownOpen: !this.state.dropdownOpen
+        });
+
+        switch (page) {
+            case 'alzheimer':
+                ReactDOM.unmountComponentAtNode(container);
+                ReactDOM.render(<Alzheimer/>, container);
+                break;
+            case 'post-surgery':
+                ReactDOM.unmountComponentAtNode(container);
+                ReactDOM.render(<Rehab/>, container);
+                break;
+            case 'neuromuscular':
+                ReactDOM.unmountComponentAtNode(container);
+                ReactDOM.render(<Neuromuscular/>, container);
+                break;
+            case 'disabilities':
+                ReactDOM.unmountComponentAtNode(container);
+                ReactDOM.render(<Disabilities/>, container);
+                break;
+            case 'fall':
+                ReactDOM.unmountComponentAtNode(container);
+                ReactDOM.render(<Fall/>, container);
+                break;
+            default:
+                ReactDOM.unmountComponentAtNode(container);
+                ReactDOM.render(<HomePage/>, container);
+                break;
+        }
+    }
+
     render() {
         return (
             <div className="home-page">
@@ -91,14 +132,19 @@ export class Index extends React.Component {
                                             <span className="dropdown-title">Services</span>
                                             <DropdownToggle caret={true} color="light" className="dropdown-toggle"/>
                                             <DropdownMenu>
-                                                <DropdownItem className="btn-light">
+                                                <DropdownItem onClick={this._handleDropdownClick.bind(this, 'alzheimer')}
+                                                              className="btn-light">
                                                     Alzheimer’s & Dementia
                                                 </DropdownItem>
-                                                <DropdownItem className="btn-light">Post-surgery & Rehab</DropdownItem>
-                                                <DropdownItem className="btn-light">Neuromuscular</DropdownItem>
-                                                <DropdownItem className="btn-light">Adults With
+                                                <DropdownItem onClick={this._handleDropdownClick.bind(this, 'post-surgery')}
+                                                              className="btn-light">Post-surgery & Rehab</DropdownItem>
+                                                <DropdownItem onClick={this._handleDropdownClick.bind(this, 'neuromuscular')}
+                                                              className="btn-light">Neuromuscular</DropdownItem>
+                                                <DropdownItem onClick={this._handleDropdownClick.bind(this, 'disabilities')}
+                                                              className="btn-light">Adults With
                                                     Disabilities</DropdownItem>
-                                                <DropdownItem className="btn-light">Fall Prevention &
+                                                <DropdownItem onClick={this._handleDropdownClick.bind(this, 'fall')}
+                                                              className="btn-light">Fall Prevention &
                                                     Recovery</DropdownItem>
                                             </DropdownMenu>
                                         </Dropdown>

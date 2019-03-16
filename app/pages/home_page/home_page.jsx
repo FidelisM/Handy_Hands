@@ -18,6 +18,9 @@ export class HomePage extends React.Component {
         return (
             <div className="container home-page-content">
                 <div className="wrapper" id="top-wrapper">
+                    <header className="major">
+                        <h2>Our Core Values</h2>
+                    </header>
                     <div className="container">
                         <p><span className="bold-leader">S</span>ervice Excellence: We promise and deliver quality
                             service to meet and exceed
