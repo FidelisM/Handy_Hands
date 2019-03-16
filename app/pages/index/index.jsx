@@ -1,7 +1,19 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+
 import {Dropdown, DropdownToggle, DropdownMenu, DropdownItem} from 'reactstrap';
+
+import {HomePage} from 'Pages/home_page/home_page';
+import {Compassionate} from 'Pages/compassionate_care/compassionate_care';
+import {HomeMaking} from 'Pages/home_making/home_making';
+import {Hospice} from 'Pages/hospice/hospice';
+import {LiveIn} from 'Pages/live_in/live_in';
+import {Personal} from 'Pages/personal/personal';
+import {Respite} from 'Pages/respite/respite';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'Assets/css/main.css';
+import 'CSS/styles.css';
 import './index.css';
 
 export class Index extends React.Component {
@@ -13,10 +25,52 @@ export class Index extends React.Component {
         };
     }
 
+    componentDidMount() {
+        let container = document.getElementById('home-content');
+
+        ReactDOM.render(<HomePage/>, container);
+    }
+
     toggle() {
         this.setState(prevState => ({
             dropdownOpen: !prevState.dropdownOpen
         }));
+    }
+
+    _handleLinkClick(page) {
+        let container = document.getElementById('home-content');
+
+        switch (page) {
+            case 'compassionate':
+                ReactDOM.unmountComponentAtNode(container);
+                ReactDOM.render(<Compassionate/>, container);
+                break;
+            case 'home-making':
+                ReactDOM.unmountComponentAtNode(container);
+                ReactDOM.render(<HomeMaking/>, container);
+                break;
+            case 'hospice':
+                ReactDOM.unmountComponentAtNode(container);
+                ReactDOM.render(<Hospice/>, container);
+                break;
+            case 'live-in':
+                ReactDOM.unmountComponentAtNode(container);
+                ReactDOM.render(<LiveIn/>, container);
+                break;
+            case 'personal':
+                ReactDOM.unmountComponentAtNode(container);
+                ReactDOM.render(<Personal/>, container);
+                break;
+            case 'respite':
+                ReactDOM.unmountComponentAtNode(container);
+                ReactDOM.render(<Respite/>, container);
+                break;
+            case 'home':
+            default:
+                ReactDOM.unmountComponentAtNode(container);
+                ReactDOM.render(<HomePage/>, container);
+                break;
+        }
     }
 
     render() {
@@ -46,109 +100,40 @@ export class Index extends React.Component {
                                             </DropdownMenu>
                                         </Dropdown>
                                     </li>
-                                    <li><a href="#" tabIndex="0">Compassionate Care</a></li>
-                                    <li><a href="#" tabIndex="0">Home Making Care</a></li>
-                                    <li><a href="#" tabIndex="0">Hospice Care</a></li>
-                                    <li className="logo"><h1><a tabIndex="0">Handy Hands</a></h1></li>
-                                    <li><a href="#" tabIndex="0">Live In & Overnight Care</a></li>
-                                    <li><a href="#" tabIndex="0">Personal Care</a></li>
-                                    <li><a href="#" tabIndex="0">Respite Care</a></li>
-                                    <li><a href="#" tabIndex="0">Careers</a></li>
+                                    <li><a onClick={this._handleLinkClick.bind(this, 'compassionate')} tabIndex="0">Compassionate
+                                        Care</a></li>
+                                    <li><a onClick={this._handleLinkClick.bind(this, 'home-making')} tabIndex="0">Home
+                                        Making Care</a>
+                                    </li>
+                                    <li><a onClick={this._handleLinkClick.bind(this, 'hospice')} tabIndex="0">Hospice
+                                        Care</a></li>
+                                    <li className="logo">
+                                        <h1><a tabIndex="0" onClick={this._handleLinkClick.bind(this, 'home')}>Handy
+                                            Hands</a></h1></li>
+                                    <li><a onClick={this._handleLinkClick.bind(this, 'live-in')} tabIndex="0">Live In &
+                                        Overnight
+                                        Care</a></li>
+                                    <li><a onClick={this._handleLinkClick.bind(this, 'personal')} tabIndex="0">Personal
+                                        Care</a>
+                                    </li>
+                                    <li><a onClick={this._handleLinkClick.bind(this, 'respite')} tabIndex="0">Respite
+                                        Care</a></li>
+                                    <li><a onClick={this._handleLinkClick.bind(this, 'careers')}
+                                           tabIndex="0">Careers</a></li>
                                 </ul>
                             </nav>
 
                         </div>
                         <section id="hero" className="container">
-                            <br/>
-                            <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel
+                            <div className="main-logo"/>
+                            <p className="mission-statement">Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel
                                 sem sit dolor neque semper magna. Lorem ipsum dolor sit amet consectetur et sed
                                 adipiscing elit. Curabitur vel sem sit.</p>
                         </section>
 
                     </div>
 
-                    <div className="wrapper">
-                        <div className="container">
-                            <div className="row">
-                                <section className="col-6 col-12-narrower feature">
-                                    <div className="image-wrapper first">
-                                        <a href="#" className="image featured first"><img className="pic-01 main-images"
-                                                                                          alt=""/></a>
-                                    </div>
-                                    <header>
-                                        <h2>Semper magna neque vel<br/>
-                                            adipiscing curabitur</h2>
-                                    </header>
-                                    <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel
-                                        sem sit dolor neque semper magna. Lorem ipsum dolor sit amet consectetur et sed
-                                        adipiscing elit. Curabitur vel sem sit.</p>
-                                    <ul className="actions">
-                                        <li><a href="#" className="button">Elevate my awareness</a></li>
-                                    </ul>
-                                </section>
-                                <section className="col-6 col-12-narrower feature">
-                                    <div className="image-wrapper">
-                                        <a href="#" className="image featured"><img className="pic-02 main-images"
-                                                                                    alt=""/></a>
-                                    </div>
-                                    <header>
-                                        <h2>Amet lorem ipsum dolor<br/>
-                                            sit consequat magna</h2>
-                                    </header>
-                                    <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel
-                                        sem sit dolor neque semper magna. Lorem ipsum dolor sit amet consectetur et sed
-                                        adipiscing elit. Curabitur vel sem sit.</p>
-                                    <ul className="actions">
-                                        <li><a href="#" className="button">Elevate my awareness</a></li>
-                                    </ul>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="promo-wrapper">
-                        <section id="promo">
-                            <h2>Neque semper magna et lorem ipsum adipiscing</h2>
-                            <a href="#" className="button">Breach the thresholds</a>
-                        </section>
-                    </div>
-
-                    <div className="wrapper">
-                        <section className="container">
-                            <header className="major">
-                                <h2>Sed magna consequat lorem curabitur tempus</h2>
-                                <p>Elit aliquam vulputate egestas euismod nunc semper vehicula lorem blandit</p>
-                            </header>
-                            <div className="row features">
-                                <section className="col-4 col-12-narrower feature">
-                                    <div className="image-wrapper first">
-                                        <a href="#" className="image featured"><img className="pic-03 footer-images"
-                                                                                    alt=""/></a>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
-                                        vel sem sit dolor neque semper magna lorem ipsum.</p>
-                                </section>
-                                <section className="col-4 col-12-narrower feature">
-                                    <div className="image-wrapper">
-                                        <a href="#" className="image featured"><img className="pic-04 footer-images"
-                                                                                    alt=""/></a>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
-                                        vel sem sit dolor neque semper magna lorem ipsum.</p>
-                                </section>
-                                <section className="col-4 col-12-narrower feature">
-                                    <div className="image-wrapper">
-                                        <a href="#" className="image featured"><img className="pic-05 footer-images"
-                                                                                    alt=""/></a>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
-                                        vel sem sit dolor neque semper magna lorem ipsum.</p>
-                                </section>
-                            </div>
-                            <ul className="actions major">
-                                <li><a href="#" className="button">Elevate my awareness</a></li>
-                            </ul>
-                        </section>
+                    <div id="home-content">
                     </div>
 
                     <div id="footer-wrapper">

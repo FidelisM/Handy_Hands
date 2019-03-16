@@ -1,22 +1,22 @@
 import React from 'react';
-import './compassionate_care.css';
+import './home_making.css';
 
-export class Compassionate extends React.Component {
+export class HomeMaking extends React.Component {
     constructor(props) {
         super(props);
     }
 
     render() {
         return (
-            <div className="container compassionate-care" id="main">
+            <div className="container home-making" id="main">
                 <article id="content">
                     <header>
-                        <h2>Compassionate Care</h2>
+                        <h2>Home Making</h2>
                         <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit
                             dolor neque semper.</p>
                     </header>
                     <a href="#" className="image featured">
-                        <img className="pic-07 banner-images" alt=""/>
+                        <img className="pic-06 banner-images splash-image" alt=""/>
                     </a>
                     <p>Ut sed tortor luctus, gravida nibh eget, volutpat odio. Proin rhoncus, sapien
                         mollis luctus hendrerit, orci dui viverra metus, et cursus nulla mi sed elit. Vestibulum
@@ -41,7 +41,7 @@ export class Compassionate extends React.Component {
                     <section className="col-4 col-12-narrower feature">
                         <div className="image-wrapper first">
                             <a href="#" className="image featured">
-                                <img className="pic-03 main-images" alt=""/>
+                                <img className="pic-07 main-images" alt=""/>
                             </a>
                         </div>
                         <header>
@@ -56,7 +56,7 @@ export class Compassionate extends React.Component {
                     <section className="col-4 col-12-narrower feature">
                         <div className="image-wrapper">
                             <a href="#" className="image featured">
-                                <img className="pic-04 main-images" alt=""/>
+                                <img className="pic-01 main-images" alt=""/>
                             </a>
                         </div>
                         <header>
@@ -71,7 +71,7 @@ export class Compassionate extends React.Component {
                     <section className="col-4 col-12-narrower feature">
                         <div className="image-wrapper">
                             <a href="#" className="image featured">
-                                <img className="pic-06 main-images" alt=""/>
+                                <img className="pic-02 main-images" alt=""/>
                             </a>
                         </div>
                         <header>

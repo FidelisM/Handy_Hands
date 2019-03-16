@@ -10,7 +10,8 @@ module.exports = {
     resolve: {
         alias: {
             Pages: path.resolve(__dirname, './app/pages'),
-            Assets: path.resolve(__dirname, './app/assets')
+            Assets: path.resolve(__dirname, './app/assets'),
+            CSS: path.resolve(__dirname, './app/assets/css')
         },
         extensions: ['.js', '.jsx']
     },

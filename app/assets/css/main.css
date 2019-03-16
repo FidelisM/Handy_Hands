@@ -147,7 +147,7 @@ a {
 }
 
 a:hover {
-    color: #f35858;
+    color: #107dac;
     border-bottom-color: rgba(255, 255, 255, 0);
 }
 
@@ -222,7 +222,7 @@ header {
 
 header > p {
     display: block;
-    color: #f35858;
+    color: #107dac;
     padding: 0.75em 0 1em 0;
     font-size: 1.5em;
     line-height: 1.5em;
@@ -2023,8 +2023,8 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 button:hover,
 .button:hover {
-    color: #f35858;
-    border-color: rgba(243, 88, 88, 0.5);
+    color: #107dac;
+    border-color: rgba(256, 256, 256, 0.5);
 }
 
 /* Icons */
@@ -2084,7 +2084,7 @@ button:hover,
     position: relative;
     padding: 4em 0 2em 0;
     background-image: url("../images/overlay.png"), url("../images/header.svg"), linear-gradient(75deg, #189ad3 15%, #107dac 55%);
-    background-color: #f08c89;
+    background-color: #189ad3;
     background-size: 128px 128px, 100% 620%, auto;
     background-repeat: repeat, no-repeat, no-repeat;
 }
@@ -2223,7 +2223,7 @@ button:hover,
 }
 
 .dropotron li.active > a, .dropotron li.active > span {
-    color: #f35858;
+    color: #107dac;
 }
 
 .dropotron.level-0 {
@@ -2285,7 +2285,7 @@ button:hover,
 #hero .button {
     background: #fff;
     border-color: rgba(255, 255, 255, 0);
-    color: #f08c89;
+    color: #189ad3;
     font-size: 1.25em;
 }
 

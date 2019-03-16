@@ -1,0 +1,7 @@
+.hospice #content {
+    margin-top: 50px;
+}
+
+.hospice .image.featured .splash-image {
+    background-position-y: -100px;
+}

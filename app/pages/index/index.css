@@ -1,56 +1,7 @@
-.home-page .main-images {
-    display: block;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 575px;
-    height: 256px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.home-page .footer-images {
-    display: block;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 369px;
-    height: 190px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.home-page .pic-01 {
-    background-image: url("../../assets/images/pic01.jpg");
-}
-
-.home-page .pic-02 {
-    background-image: url("../../assets/images/pic02.jpg");
-}
-
-.home-page .pic-03 {
-    background-image: url("../../assets/images/pic03.jpg");
-}
-
-.home-page .pic-04 {
-    background-image: url("../../assets/images/pic04.jpg");
-}
-
-.home-page .pic-05 {
-    background-image: url("../../assets/images/pic05.jpg");
-}
-
-.home-page .pic-06 {
-    background-image: url("../../assets/images/pic06.jpg");
-}
-
-.home-page .pic-073 {
-    background-image: url("../../assets/images/pic07.jpg");
-}
-
 .home-page .flex-content {
     display: flex;
     justify-content: space-between;
 }
-
 
 .home-page #nav li a:focus,
 .home-page #nav li a:active {
@@ -77,6 +28,7 @@
     letter-spacing: 3px;
     text-align: center;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .home-page .dropdown-toggle,
@@ -98,4 +50,24 @@
     font-weight: 400;
     margin-right: 5px;
     outline: 0;
+}
+
+.home-page #header-wrapper li {
+    cursor: pointer;
+}
+
+.home-page #header-wrapper .main-logo {
+    height: 120px;
+    width: 325px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    background-size: cover;
+}
+
+.home-page #header-wrapper #hero {
+   display: flex;
+}
+
+.home-page #header-wrapper #hero p {
+    text-align: center;
 }

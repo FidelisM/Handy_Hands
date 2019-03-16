@@ -1,0 +1,7 @@
+.live-in #content {
+    margin-top: 50px;
+}
+
+.live-in .image.featured .splash-image {
+    background-position-y: -40px;
+}

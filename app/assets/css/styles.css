@@ -1,0 +1,61 @@
+.main-images {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 575px;
+    height: 256px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-images {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 1200px;
+    height: 445px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-images {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 369px;
+    height: 190px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pic-01 {
+    background-image: url("../images/pic01.jpg");
+}
+
+.pic-02 {
+    background-image: url("../images/pic02.jpg");
+}
+
+.pic-03 {
+    background-image: url("../images/pic03.jpg");
+}
+
+.pic-04 {
+    background-image: url("../images/pic04.jpg");
+}
+
+.pic-05 {
+    background-image: url("../images/pic05.jpg");
+}
+
+.pic-06 {
+    background-image: url("../images/pic06.jpg");
+}
+
+.pic-07 {
+    background-image: url("../images/pic07.jpg");
+}
+
+.main-logo {
+    background-image: url("../images/Handy Hands Logo Official.png");
+}
