@@ -1,0 +1,30 @@
+.home-page-content #promo-wrapper {
+    position: relative;
+}
+
+.home-page-content #promo-wrapper #promo {
+    margin-top: 5em;
+}
+
+.home-page-content #promo-wrapper .sub-logo {
+    position: absolute;
+    height: 165px;
+    width: 215px;
+    top: 5%;
+    left: 40%;
+    background-size: cover;
+}
+
+.home-page-content #top-wrapper .bold-leader {
+    color: #107dac;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.home-page-content .wrapper {
+    padding: 6em 0 3em 0;
+}
+
+.home-page-content .services {
+    margin-top: -3em;
+}

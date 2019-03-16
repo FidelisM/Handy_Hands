@@ -1,8 +1,17 @@
 import React from 'react';
+import './home_page.css';
+import ReactDOM from "react-dom";
+import {Services} from "Pages/services/services";
 
 export class HomePage extends React.Component {
     constructor(props) {
         super(props);
+    }
+
+    componentDidMount() {
+        let container = document.getElementById('services-wrapper');
+
+        ReactDOM.render(<Services/>, container);
     }
 
     render() {
@@ -10,89 +19,46 @@ export class HomePage extends React.Component {
             <div className="container home-page-content">
                 <div className="wrapper" id="top-wrapper">
                     <div className="container">
-                        <div className="row">
-                            <section className="col-6 col-12-narrower feature">
-                                <div className="image-wrapper first">
-                                    <a href="#" className="image featured first"><img
-                                        className="pic-01 main-images"
-                                        alt=""/></a>
-                                </div>
-                                <header>
-                                    <h2>Semper magna neque vel<br/>
-                                        adipiscing curabitur</h2>
-                                </header>
-                                <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel
-                                    sem sit dolor neque semper magna. Lorem ipsum dolor sit amet consectetur et
-                                    sed
-                                    adipiscing elit. Curabitur vel sem sit.</p>
-                                <ul className="actions">
-                                    <li><a href="#" className="button">Elevate my awareness</a></li>
-                                </ul>
-                            </section>
-                            <section className="col-6 col-12-narrower feature">
-                                <div className="image-wrapper">
-                                    <a href="#" className="image featured"><img className="pic-02 main-images"
-                                                                                alt=""/></a>
-                                </div>
-                                <header>
-                                    <h2>Amet lorem ipsum dolor<br/>
-                                        sit consequat magna</h2>
-                                </header>
-                                <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel
-                                    sem sit dolor neque semper magna. Lorem ipsum dolor sit amet consectetur et
-                                    sed
-                                    adipiscing elit. Curabitur vel sem sit.</p>
-                                <ul className="actions">
-                                    <li><a href="#" className="button">Elevate my awareness</a></li>
-                                </ul>
-                            </section>
-                        </div>
+                        <p><span className="bold-leader">S</span>ervice Excellence: We promise and deliver quality
+                            service to meet and exceed
+                            the needs of patients and clients.</p>
+                        <p><span className="bold-leader">E</span>nterprising Work Ethic: We promote personal and
+                            organizational progress
+                            through innovating and incorporating leading practices.</p>
+                        <p><span className="bold-leader">R</span>espect and Compassion: We pledge to treat every Vision
+                            team member, patient,
+                            and client with the utmost respect and dignity. We also recognize that Vision is in the
+                            business of improving lives, and as a result, we expect that every team member
+                            exhibits heartfelt compassion and empathy in every interaction, every day.</p>
+                        <p><span className="bold-leader">V</span>igilant focus on today and tomorrow:
+                            We embrace change and utilize the best people and processes to improve ourselves
+                            and our services</p>
+                        <p><span className="bold-leader">I</span>ndividualized quality: Care that meets the total needs
+                            of the patient and family
+                            whose care can be safely and effectively managed in the home care environment
+                            without regards to race, sex, religion, or age.</p>
+                        <p><span className="bold-leader">C</span>ontinuous Growth and Improvement: We are focused on
+                            today and tomorrow.
+                            We embrace change and utilize the best people and processes to improve ourselves
+                            and our services.</p>
+                        <p><span className="bold-leader">E</span>thical Behavior and Integrity: We are dedicated to the
+                            highest level of
+                            compliance and personal integrity. We believe in doing the right thing and expect this
+                            behavior from others.</p>
                     </div>
                 </div>
 
                 <div id="promo-wrapper">
+                    <div className="main-logo sub-logo"/>
                     <section id="promo">
-                        <h2>Neque semper magna et lorem ipsum adipiscing</h2>
-                        <a href="#" className="button">Breach the thresholds</a>
+                        <h2>To be the best Partner to our Clients and families Our expertise together with our knowledge
+                            gained from decades of Nursing experience brought to the market by our founder and the
+                            personalized approach to caring for families is why we matter.</h2>
                     </section>
                 </div>
 
-                <div className="wrapper" id="mid-body-wrapper">
-                    <section className="container">
-                        <header className="major">
-                            <h2>Sed magna consequat lorem curabitur tempus</h2>
-                            <p>Elit aliquam vulputate egestas euismod nunc semper vehicula lorem blandit</p>
-                        </header>
-                        <div className="row features">
-                            <section className="col-4 col-12-narrower feature">
-                                <div className="image-wrapper first">
-                                    <a href="#" className="image featured"><img className="pic-03 footer-images"
-                                                                                alt=""/></a>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
-                                    vel sem sit dolor neque semper magna lorem ipsum.</p>
-                            </section>
-                            <section className="col-4 col-12-narrower feature">
-                                <div className="image-wrapper">
-                                    <a href="#" className="image featured"><img className="pic-04 footer-images"
-                                                                                alt=""/></a>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
-                                    vel sem sit dolor neque semper magna lorem ipsum.</p>
-                            </section>
-                            <section className="col-4 col-12-narrower feature">
-                                <div className="image-wrapper">
-                                    <a href="#" className="image featured"><img className="pic-05 footer-images"
-                                                                                alt=""/></a>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
-                                    vel sem sit dolor neque semper magna lorem ipsum.</p>
-                            </section>
-                        </div>
-                        <ul className="actions major">
-                            <li><a href="#" className="button">Elevate my awareness</a></li>
-                        </ul>
-                    </section>
+                <div className="wrapper" id="services-wrapper">
+
                 </div>
             </div>
         );

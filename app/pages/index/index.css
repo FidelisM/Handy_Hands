@@ -58,17 +58,21 @@
 
 .home-page #header-wrapper .main-logo {
     height: 250px;
-    width: 875px;
     background-repeat: no-repeat;
-    margin-right: 10px;
     background-size: cover;
+    flex: 0.4;
 }
 
 .home-page #header-wrapper #hero {
-   display: flex;
+    display: flex;
 }
 
 .home-page #header-wrapper #hero p {
-    text-align: center;
-    line-height: 2.5em;
+    line-height: 1.5em;
+    font-size: 1.25em;
+}
+
+.home-page #header-wrapper #hero .mission-statement {
+    flex: 1;
+    align-self: center;
 }

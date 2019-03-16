@@ -15,6 +15,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'Assets/css/main.css';
 import 'CSS/styles.css';
 import './index.css';
+import {Contact} from "Pages/contact_us/contact_us";
 
 export class Index extends React.Component {
     constructor(props) {
@@ -26,9 +27,11 @@ export class Index extends React.Component {
     }
 
     componentDidMount() {
-        let container = document.getElementById('home-content');
+        let container = document.getElementById('home-content'),
+        footer = document.getElementById('footer-wrapper');
 
         ReactDOM.render(<HomePage/>, container);
+        ReactDOM.render(<Contact/>, footer);
     }
 
     toggle() {
@@ -88,15 +91,15 @@ export class Index extends React.Component {
                                             <span className="dropdown-title">Services</span>
                                             <DropdownToggle caret={true} color="light" className="dropdown-toggle"/>
                                             <DropdownMenu>
-                                                <DropdownItem className="btn-light">Alzheimer’s &
-                                                    Dementia</DropdownItem>
+                                                <DropdownItem className="btn-light">
+                                                    Alzheimer’s & Dementia
+                                                </DropdownItem>
                                                 <DropdownItem className="btn-light">Post-surgery & Rehab</DropdownItem>
                                                 <DropdownItem className="btn-light">Neuromuscular</DropdownItem>
                                                 <DropdownItem className="btn-light">Adults With
                                                     Disabilities</DropdownItem>
                                                 <DropdownItem className="btn-light">Fall Prevention &
                                                     Recovery</DropdownItem>
-                                                <DropdownItem className="btn-light">Homecare Resources</DropdownItem>
                                             </DropdownMenu>
                                         </Dropdown>
                                     </li>
@@ -126,74 +129,22 @@ export class Index extends React.Component {
                         </div>
                         <section id="hero" className="container">
                             <div className="main-logo"/>
-                            <p className="mission-statement">Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel
-                                sem sit dolor neque semper magna. Lorem ipsum dolor sit amet consectetur et sed
-                                adipiscing elit. Curabitur vel sem sit.</p>
+                            <div className="mission-statement">
+                                <p>We aim at providing the highest level of care to our
+                                    clients using a holistic approach to make
+                                    sure all aspects of their needs are understood and well taken care of. </p>
+                                <p>Our commitment to the
+                                    recovery, wellness and prevention is unsurpassed and hedges on our understanding of
+                                    the
+                                    important role the family plays in these aspects.</p>
+                            </div>
                         </section>
-
                     </div>
 
                     <div id="home-content">
                     </div>
 
                     <div id="footer-wrapper">
-                        <div id="footer" className="container">
-                            <header className="major">
-                                <h2>Euismod aliquam vehicula lorem</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel sem
-                                    sit<br/>
-                                    dolor neque semper magna lorem ipsum feugiat veroeros lorem ipsum dolore.</p>
-                            </header>
-                            <div className="row">
-                                <section className="col-6 col-12-narrower">
-                                    <form method="post" action="#">
-                                        <div className="row gtr-50">
-                                            <div className="col-6 col-12-mobile">
-                                                <input name="name" placeholder="Name" type="text"/>
-                                            </div>
-                                            <div className="col-6 col-12-mobile">
-                                                <input name="email" placeholder="Email" type="text"/>
-                                            </div>
-                                            <div className="col-12">
-                                                <textarea name="message" placeholder="Message"/>
-                                            </div>
-                                            <div className="col-12">
-                                                <ul className="actions">
-                                                    <li><input type="submit" value="Send Message"/></li>
-                                                    <li><input type="reset" value="Clear form"/></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </section>
-                                <section className="col-6 col-12-narrower">
-                                    <div className="row gtr-0">
-                                        <ul className="divided icons col-6 col-12-mobile">
-                                            <li className="icon fa-twitter"><a href="#"><span
-                                                className="extra">twitter.com/</span>untitled</a></li>
-                                            <li className="icon fa-facebook"><a href="#"><span
-                                                className="extra">facebook.com/</span>untitled</a></li>
-                                            <li className="icon fa-dribbble"><a href="#"><span
-                                                className="extra">dribbble.com/</span>untitled</a></li>
-                                        </ul>
-                                        <ul className="divided icons col-6 col-12-mobile">
-                                            <li className="icon fa-instagram"><a href="#"><span
-                                                className="extra">instagram.com/</span>untitled</a></li>
-                                            <li className="icon fa-youtube"><a href="#"><span
-                                                className="extra">youtube.com/</span>untitled</a></li>
-                                            <li className="icon fa-pinterest"><a href="#"><span
-                                                className="extra">pinterest.com/</span>untitled</a></li>
-                                        </ul>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                        <div id="copyright" className="container">
-                            <ul className="menu">
-                                <li>&copy; Untitled. All rights reserved.</li>
-                                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>

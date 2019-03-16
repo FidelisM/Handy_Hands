@@ -478,7 +478,7 @@ header.major {
 }
 
 .row > * {
-    padding: 50px 0 0 50px;
+    padding: 50px 0 0 25px;
 }
 
 .row.gtr-uniform {
@@ -2096,12 +2096,13 @@ button:hover,
 
 #promo-wrapper {
     position: relative;
-    background-image: url("../images/overlay.png"), url("../images/promo.jpg");
-    background-size: 192px 192px, cover;
-    background-position: top left, center center;
     color: #fff;
     text-align: center;
     padding: 6em 0 6em 0;
+    background-image: url(../images/./overlay.png), url(../images/./header.svg), linear-gradient(75deg, #189ad3 15%, #107dac 55%);
+    background-color: #189ad3;
+    background-size: 128px 128px, 100% 620%, auto;
+    background-repeat: repeat, no-repeat, no-repeat;
 }
 
 #footer-wrapper {
