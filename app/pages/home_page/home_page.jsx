@@ -44,7 +44,7 @@ export class HomePage extends React.Component {
                         <div className="mnemonic"><p className="mnemonic-text"><span
                             className="bold-leader">V</span>igilant focus on today and tomorrow:
                             We embrace change and utilize the best people and processes to improve ourselves
-                            and our services</p></div>
+                            and our services.</p></div>
                         <div className="mnemonic"><p className="mnemonic-text"><span
                             className="bold-leader">I</span>ndividualized quality: Care that meets the total needs
                             of the patient and family
