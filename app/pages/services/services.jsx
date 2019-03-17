@@ -10,7 +10,7 @@ export class Services extends React.Component {
         return (
             <div className="container services" id="main">
                 <header>
-                    <p>Our Services:</p>
+                    <p>Our Specialties:</p>
                 </header>
                 <div className="row features">
                     <section className="col-4 col-12-narrower feature section-one">

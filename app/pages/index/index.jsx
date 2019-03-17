@@ -129,7 +129,7 @@ export class Index extends React.Component {
                                         <Dropdown className="dropdown services-dropdown"
                                                   isOpen={this.state.dropdownOpen}
                                                   toggle={this.toggle.bind(this)}>
-                                            <span className="dropdown-title">Services</span>
+                                            <span className="dropdown-title">Specialties</span>
                                             <DropdownToggle caret={true} color="light" className="dropdown-toggle"/>
                                             <DropdownMenu>
                                                 <DropdownItem onClick={this._handleDropdownClick.bind(this, 'alzheimer')}
