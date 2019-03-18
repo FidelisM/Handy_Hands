@@ -1,3 +1,31 @@
+@media only screen and (max-width: 1200px) {
+    .home-page #header-wrapper .large-menu {
+        display: none;
+    }
+
+    .home-page #header-wrapper .small-menu {
+        display: block;
+    }
+
+    .home-page #header-wrapper {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .home-page #header-wrapper .small-menu {
+        display: none;
+    }
+}
+
+.home-page #header-wrapper .small-menu {
+    position: relative;
+}
+
+.home-page #header-wrapper .small-menu  .hamburger-dropdown .icon {
+    cursor: pointer;
+}
+
 .home-page .flex-content {
     display: flex;
     justify-content: space-between;
@@ -8,8 +36,29 @@
     box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
 }
 
-.home-page #nav li:not(.logo) a {
-    font-weight: 400;
+.home-page #nav .small-menu .icon {
+    color: #FFFFFF;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.home-page #nav li a {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    border: solid 1px rgba(255, 255, 255, 0);
+    border-radius: 0.35em;
+    padding: 0.3em 1em 0.3em 1em;
+    -moz-transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    -webkit-transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    -o-transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+}
+
+.home-page #nav li {
+    display: inline-block;
+    margin-left: 1em;
 }
 
 .home-page .logo a {
@@ -29,6 +78,7 @@
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .home-page .dropdown-toggle,
@@ -59,7 +109,7 @@
 .home-page #header-wrapper .main-logo {
     height: 250px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     flex: 0.4;
 }
 

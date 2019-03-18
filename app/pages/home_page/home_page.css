@@ -12,7 +12,8 @@
     width: 215px;
     top: 5%;
     left: 40%;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .home-page-content #top-wrapper .bold-leader {

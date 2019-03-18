@@ -21,6 +21,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'Assets/css/main.css';
 import 'CSS/styles.css';
 import './index.css';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faBars} from "@fortawesome/free-solid-svg-icons";
 
 
 export class Index extends React.Component {
@@ -28,7 +30,8 @@ export class Index extends React.Component {
         super(props);
 
         this.state = {
-            dropdownOpen: false
+            dropdownOpen: false,
+            hamburgerOpen: false
         };
     }
 
@@ -43,6 +46,12 @@ export class Index extends React.Component {
     toggle() {
         this.setState(prevState => ({
             dropdownOpen: !prevState.dropdownOpen
+        }));
+    }
+
+    toggleHamburger() {
+        this.setState(prevState => ({
+            hamburgerOpen: !prevState.hamburgerOpen
         }));
     }
 
@@ -85,10 +94,6 @@ export class Index extends React.Component {
     _handleDropdownClick(page) {
         let container = document.getElementById('home-content');
 
-        this.setState({
-            dropdownOpen: !this.state.dropdownOpen
-        });
-
         switch (page) {
             case 'alzheimer':
                 ReactDOM.unmountComponentAtNode(container);
@@ -124,54 +129,109 @@ export class Index extends React.Component {
                     <div id="header-wrapper">
                         <div id="header" className="container">
                             <nav id="nav">
-                                <ul className="flex-content">
-                                    <li>
-                                        <Dropdown className="dropdown services-dropdown"
-                                                  isOpen={this.state.dropdownOpen}
-                                                  toggle={this.toggle.bind(this)}>
-                                            <span className="dropdown-title">Specialties</span>
-                                            <DropdownToggle caret={true} color="light" className="dropdown-toggle"/>
-                                            <DropdownMenu>
-                                                <DropdownItem onClick={this._handleDropdownClick.bind(this, 'alzheimer')}
-                                                              className="btn-light">
-                                                    Alzheimer’s & Dementia
-                                                </DropdownItem>
-                                                <DropdownItem onClick={this._handleDropdownClick.bind(this, 'post-surgery')}
-                                                              className="btn-light">Post-surgery & Rehab</DropdownItem>
-                                                <DropdownItem onClick={this._handleDropdownClick.bind(this, 'neuromuscular')}
-                                                              className="btn-light">Neuromuscular</DropdownItem>
-                                                <DropdownItem onClick={this._handleDropdownClick.bind(this, 'disabilities')}
-                                                              className="btn-light">Adults With
-                                                    Disabilities</DropdownItem>
-                                                <DropdownItem onClick={this._handleDropdownClick.bind(this, 'fall')}
-                                                              className="btn-light">Fall Prevention &
-                                                    Recovery</DropdownItem>
-                                            </DropdownMenu>
-                                        </Dropdown>
-                                    </li>
-                                    <li><a onClick={this._handleLinkClick.bind(this, 'compassionate')} tabIndex="0">Compassionate
-                                        Care</a></li>
-                                    <li><a onClick={this._handleLinkClick.bind(this, 'home-making')} tabIndex="0">Home
-                                        Making Care</a>
-                                    </li>
-                                    <li><a onClick={this._handleLinkClick.bind(this, 'hospice')} tabIndex="0">Hospice
-                                        Care</a></li>
-                                    <li className="logo">
-                                        <h1><a tabIndex="0" onClick={this._handleLinkClick.bind(this, 'home')}>Handy
-                                            Hands</a></h1></li>
-                                    <li><a onClick={this._handleLinkClick.bind(this, 'live-in')} tabIndex="0">Live In &
-                                        Overnight
-                                        Care</a></li>
-                                    <li><a onClick={this._handleLinkClick.bind(this, 'personal')} tabIndex="0">Personal
-                                        Care</a>
-                                    </li>
-                                    <li><a onClick={this._handleLinkClick.bind(this, 'respite')} tabIndex="0">Respite
-                                        Care</a></li>
-                                    <li><a onClick={this._handleLinkClick.bind(this, 'careers')}
-                                           tabIndex="0">Careers</a></li>
-                                </ul>
+                                <div className="large-menu">
+                                    <ul className="flex-content">
+                                        <li>
+                                            <Dropdown className="dropdown services-dropdown"
+                                                      isOpen={this.state.dropdownOpen}
+                                                      toggle={this.toggle.bind(this)}>
+                                                <DropdownToggle caret={true} color="light" className="dropdown-toggle">
+                                                    <span className="dropdown-title">Specialties</span>
+                                                </DropdownToggle>
+                                                <DropdownMenu>
+                                                    <DropdownItem
+                                                        onClick={this._handleDropdownClick.bind(this, 'alzheimer')}
+                                                        className="btn-light">
+                                                        Alzheimer’s & Dementia
+                                                    </DropdownItem>
+                                                    <DropdownItem
+                                                        onClick={this._handleDropdownClick.bind(this, 'post-surgery')}
+                                                        className="btn-light">Post-surgery & Rehab</DropdownItem>
+                                                    <DropdownItem
+                                                        onClick={this._handleDropdownClick.bind(this, 'neuromuscular')}
+                                                        className="btn-light">Neuromuscular</DropdownItem>
+                                                    <DropdownItem
+                                                        onClick={this._handleDropdownClick.bind(this, 'disabilities')}
+                                                        className="btn-light">Adults With
+                                                        Disabilities</DropdownItem>
+                                                    <DropdownItem onClick={this._handleDropdownClick.bind(this, 'fall')}
+                                                                  className="btn-light">Fall Prevention &
+                                                        Recovery</DropdownItem>
+                                                </DropdownMenu>
+                                            </Dropdown>
+                                        </li>
+                                        <li><a onClick={this._handleLinkClick.bind(this, 'compassionate')} tabIndex="0">Compassionate
+                                            Care</a></li>
+                                        <li><a onClick={this._handleLinkClick.bind(this, 'home-making')} tabIndex="0">Home
+                                            Making Care</a>
+                                        </li>
+                                        <li><a onClick={this._handleLinkClick.bind(this, 'hospice')} tabIndex="0">Hospice
+                                            Care</a></li>
+                                        <li className="logo">
+                                            <h1><a tabIndex="0" onClick={this._handleLinkClick.bind(this, 'home')}>Handy
+                                                Hands</a></h1></li>
+                                        <li><a onClick={this._handleLinkClick.bind(this, 'live-in')} tabIndex="0">Live
+                                            In &
+                                            Overnight
+                                            Care</a></li>
+                                        <li><a onClick={this._handleLinkClick.bind(this, 'personal')} tabIndex="0">Personal
+                                            Care</a>
+                                        </li>
+                                        <li><a onClick={this._handleLinkClick.bind(this, 'respite')} tabIndex="0">Respite
+                                            Care</a></li>
+                                        <li><a onClick={this._handleLinkClick.bind(this, 'careers')}
+                                               tabIndex="0">Careers</a></li>
+                                    </ul>
+                                </div>
+                                <div className="small-menu">
+                                    <Dropdown className="dropdown hamburger-dropdown" isOpen={this.state.hamburgerOpen}
+                                              toggle={this.toggleHamburger.bind(this)}>
+                                        <DropdownToggle tag="span" aria-expanded={this.state.hamburgerOpen}>
+                                            <span className="icon"><FontAwesomeIcon icon={faBars} size="lg"/></span>
+                                        </DropdownToggle>
+                                        <DropdownMenu>
+                                            <DropdownItem
+                                                onClick={this._handleLinkClick.bind(this, 'compassionate')}
+                                                className="btn-light">Compassionate Care</DropdownItem>
+                                            <DropdownItem
+                                                onClick={this._handleLinkClick.bind(this, 'home-making')}
+                                                className="btn-light">Home Making Care
+                                            </DropdownItem>
+                                            <DropdownItem onClick={this._handleLinkClick.bind(this, 'hospice')}
+                                                          className="btn-light">Hospice Care</DropdownItem>
+                                            <DropdownItem onClick={this._handleLinkClick.bind(this, 'live-in')}
+                                                          className="btn-light">Live In & Overnight Care</DropdownItem>
+                                            <DropdownItem onClick={this._handleLinkClick.bind(this, 'personal')}
+                                                          className="btn-light">PersonalCare
+                                            </DropdownItem>
+                                            <DropdownItem onClick={this._handleLinkClick.bind(this, 'respite')}
+                                                          className="btn-light">Respite Care</DropdownItem>
+                                            <DropdownItem onClick={this._handleLinkClick.bind(this, 'careers')}
+                                                          className="btn-light">Careers
+                                            </DropdownItem>
+                                            <DropdownItem divider={true}/>
+                                            <DropdownItem
+                                                onClick={this._handleDropdownClick.bind(this, 'alzheimer')}
+                                                className="btn-light">
+                                                Alzheimer’s & Dementia
+                                            </DropdownItem>
+                                            <DropdownItem
+                                                onClick={this._handleDropdownClick.bind(this, 'post-surgery')}
+                                                className="btn-light">Post-surgery & Rehab</DropdownItem>
+                                            <DropdownItem
+                                                onClick={this._handleDropdownClick.bind(this, 'neuromuscular')}
+                                                className="btn-light">Neuromuscular</DropdownItem>
+                                            <DropdownItem
+                                                onClick={this._handleDropdownClick.bind(this, 'disabilities')}
+                                                className="btn-light">Adults With
+                                                Disabilities</DropdownItem>
+                                            <DropdownItem onClick={this._handleDropdownClick.bind(this, 'fall')}
+                                                          className="btn-light">Fall Prevention &
+                                                Recovery</DropdownItem>
+                                        </DropdownMenu>
+                                    </Dropdown>
+                                </div>
                             </nav>
-
                         </div>
                         <section id="hero" className="container">
                             <div className="main-logo"/>

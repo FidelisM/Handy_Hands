@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom';
 import {Services} from 'Pages/services/services';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faPlus} from '@fortawesome/free-solid-svg-icons';
-import 'CSS/font-awesome.min.css';
 
 export class HomePage extends React.Component {
     constructor(props) {
