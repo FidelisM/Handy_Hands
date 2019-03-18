@@ -19,18 +19,18 @@ export class Contact extends React.Component {
                             <form method="post" action="#">
                                 <div className="row gtr-50">
                                     <div className="col-6 col-12-mobile">
-                                        <input name="name" placeholder="Name" type="text"/>
+                                        <input name="name" placeholder="Name" type="text" disabled={true}/>
                                     </div>
                                     <div className="col-6 col-12-mobile">
-                                        <input name="email" placeholder="Email" type="text"/>
+                                        <input name="email" placeholder="Email" type="text" disabled={true}/>
                                     </div>
                                     <div className="col-12">
-                                        <textarea name="message" placeholder="Message"/>
+                                        <textarea name="message" placeholder="Message" disabled={true}/>
                                     </div>
                                     <div className="col-12">
                                         <ul className="actions">
-                                            <li><input type="submit" value="Send Message"/></li>
-                                            <li><input type="reset" value="Clear form"/></li>
+                                            <li><input type="submit" value="Send Message" disabled={true}/></li>
+                                            <li><input type="reset" value="Clear form" disabled={true}/></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -39,21 +39,11 @@ export class Contact extends React.Component {
                         <section className="col-6 col-12-narrower">
                             <div className="row gtr-0">
                                 <ul className="divided icons col-6 col-12-mobile">
-                                    <li className="icon fa-twitter"><a href="#"><span
-                                        className="extra">twitter.com/</span>untitled</a></li>
-                                    <li className="icon fa-facebook"><a href="#"><span
-                                        className="extra">facebook.com/</span>untitled</a></li>
-                                    <li className="icon fa-dribbble"><a href="#"><span
-                                        className="extra">dribbble.com/</span>untitled</a></li>
+                                    <li className="icon fa-phone"><a>240-780-8578</a></li>
                                 </ul>
-                                <ul className="divided icons col-6 col-12-mobile">
-                                    <li className="icon fa-instagram"><a href="#"><span
-                                        className="extra">instagram.com/</span>untitled</a></li>
-                                    <li className="icon fa-youtube"><a href="#"><span
-                                        className="extra">youtube.com/</span>untitled</a></li>
-                                    <li className="icon fa-pinterest"><a href="#"><span
-                                        className="extra">pinterest.com/</span>untitled</a></li>
-                                </ul>
+                                {/*<ul className="divided icons col-6 col-12-mobile">
+                                    <li className="icon fa-envelope"><a>untitled</a></li>
+                                </ul>*/}
                             </div>
                         </section>
                     </div>
