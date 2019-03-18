@@ -12,7 +12,7 @@
     }
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1200px) {
     .home-page #header-wrapper .small-menu {
         display: none;
     }
@@ -22,6 +22,16 @@
     position: relative;
 }
 
+.home-page #header-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+}
+
+.home-page #header-wrapper #header {
+    width: 100%;
+}
+
 .home-page #header-wrapper .small-menu  .hamburger-dropdown .icon {
     cursor: pointer;
 }
@@ -29,6 +39,8 @@
 .home-page .flex-content {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .home-page #nav li a:focus,
@@ -38,9 +50,7 @@
 
 .home-page #nav .small-menu .icon {
     color: #FFFFFF;
-    position: absolute;
-    top: 5px;
-    left: 5px;
+    float: left;
 }
 
 .home-page #nav li a {
@@ -59,6 +69,7 @@
 .home-page #nav li {
     display: inline-block;
     margin-left: 1em;
+    white-space: nowrap;
 }
 
 .home-page .logo a {
