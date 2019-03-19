@@ -16,13 +16,16 @@ import {Rehab} from 'Pages/rehab/rehab';
 import {Neuromuscular} from 'Pages/neuromuscular/neuromuscular';
 import {Disabilities} from 'Pages/disabilities/disabilities';
 import {Fall} from 'Pages/fall/fall';
+import {AboutUs} from 'Pages/about_us/about_us';
+
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faBars} from '@fortawesome/free-solid-svg-icons';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'Assets/css/main.css';
 import 'CSS/styles.css';
 import './index.css';
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faBars} from "@fortawesome/free-solid-svg-icons";
+
 
 
 export class Index extends React.Component {
@@ -83,7 +86,10 @@ export class Index extends React.Component {
                 ReactDOM.unmountComponentAtNode(container);
                 ReactDOM.render(<Respite/>, container);
                 break;
-            case 'home':
+            case 'about-us':
+                ReactDOM.unmountComponentAtNode(container);
+                ReactDOM.render(<AboutUs/>, container);
+                break; case 'home':
             default:
                 ReactDOM.unmountComponentAtNode(container);
                 ReactDOM.render(<HomePage/>, container);
@@ -179,8 +185,8 @@ export class Index extends React.Component {
                                         </li>
                                         <li><a onClick={this._handleLinkClick.bind(this, 'respite')} tabIndex="0">Respite
                                             Care</a></li>
-                                        <li><a onClick={this._handleLinkClick.bind(this, 'careers')}
-                                               tabIndex="0">Careers</a></li>
+                                        <li><a onClick={this._handleLinkClick.bind(this, 'about-us')}
+                                               tabIndex="0">About Us</a></li>
                                     </ul>
                                 </div>
                                 <div className="small-menu">
@@ -206,8 +212,8 @@ export class Index extends React.Component {
                                             </DropdownItem>
                                             <DropdownItem onClick={this._handleLinkClick.bind(this, 'respite')}
                                                           className="btn-light">Respite Care</DropdownItem>
-                                            <DropdownItem onClick={this._handleLinkClick.bind(this, 'careers')}
-                                                          className="btn-light">Careers
+                                            <DropdownItem onClick={this._handleLinkClick.bind(this, 'about-us')}
+                                                          className="btn-light">About Us
                                             </DropdownItem>
                                             <DropdownItem divider={true}/>
                                             <DropdownItem

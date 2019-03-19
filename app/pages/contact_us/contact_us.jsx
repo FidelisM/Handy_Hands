@@ -38,10 +38,8 @@ export class Contact extends React.Component {
                         </section>
                         <section className="col-6 col-12-narrower">
                             <div className="row gtr-0">
-                                <ul className="divided icons col-6 col-12-mobile">
+                                <ul className="divided icons">
                                     <li className="icon fa-phone"><a>240-780-8578</a></li>
-                                </ul>
-                                <ul className="divided icons col-6 col-12-mobile">
                                     <li className="icon fa-at"><a>handyhandsmd@gmail.com</a></li>
                                 </ul>
                             </div>

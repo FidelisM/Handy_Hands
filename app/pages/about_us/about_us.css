@@ -1,0 +1,7 @@
+.about-us #content {
+    margin-top: 50px;
+}
+
+.about-us .image.featured .splash-image {
+    background-position-y: -100px;
+}
