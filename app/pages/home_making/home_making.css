@@ -2,6 +2,6 @@
     margin-top: 50px;
 }
 
-.home-making .image.featured .splash-image {
-    background-position-y: -225px;
+.home-making #content .banner-images {
+    height: 780px;
 }

@@ -1,3 +1,11 @@
 .personal #content {
     margin-top: 50px;
 }
+
+.personal #content .banner-images {
+    height: 780px;
+}
+
+.personal .image.featured .splash-image {
+    background-position-y: -25px;
+}
