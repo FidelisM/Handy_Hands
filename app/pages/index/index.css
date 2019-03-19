@@ -32,7 +32,7 @@
     width: 100%;
 }
 
-.home-page #header-wrapper .small-menu  .hamburger-dropdown .icon {
+.home-page #header-wrapper .small-menu .hamburger-dropdown .icon {
     cursor: pointer;
 }
 
@@ -96,8 +96,12 @@
 .home-page .dropdown-title {
     background: none;
     border: none;
-    color: #fff;
+    color: #FFFFFF;
     outline: 0;
+}
+
+.home-page .services-dropdown.show .dropdown-toggle .dropdown-title {
+    color: #000000;
 }
 
 .home-page .dropdown-toggle:active,
