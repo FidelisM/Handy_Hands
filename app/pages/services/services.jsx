@@ -16,7 +16,7 @@ export class Services extends React.Component {
                     <section className="col-4 col-12-narrower feature section-one">
                         <div className="image-wrapper first">
                             <a className="image featured">
-                                <img className="pic-07 main-images" alt=""/>
+                                <img className="pic-04 main-images" alt=""/>
                             </a>
                         </div>
                         <header>
@@ -28,7 +28,7 @@ export class Services extends React.Component {
                     <section className="col-4 col-12-narrower feature section-two">
                         <div className="image-wrapper">
                             <a className="image featured">
-                                <img className="pic-01 main-images" alt=""/>
+                                <img className="pic-02 main-images" alt=""/>
                             </a>
                         </div>
                         <header>
@@ -40,7 +40,7 @@ export class Services extends React.Component {
                     <section className="col-4 col-12-narrower feature section-three">
                         <div className="image-wrapper">
                             <a className="image featured">
-                                <img className="pic-02 main-images" alt=""/>
+                                <img className="pic-03 main-images" alt=""/>
                             </a>
                         </div>
                         <header>

@@ -1,3 +1,11 @@
 .rehab #content {
     margin-top: 50px;
 }
+
+.rehab #content .banner-images {
+    height: 700px;
+}
+
+.rehab .image.featured .splash-image {
+    background-position-y: -50px;
+}

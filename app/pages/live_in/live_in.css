@@ -5,3 +5,7 @@
 .live-in .image.featured .splash-image {
     background-position-y: -40px;
 }
+
+.live-in #content .banner-images {
+    height: 700px;
+}

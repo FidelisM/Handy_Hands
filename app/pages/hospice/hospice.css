@@ -5,3 +5,7 @@
 .hospice .image.featured .splash-image {
     background-position-y: -100px;
 }
+
+.hospice #content .banner-images {
+    height: 700px;
+}
