@@ -1,3 +1,7 @@
 .respite #content {
     margin-top: 50px;
 }
+
+.respite #content .banner-images {
+    height: 525px;
+}
