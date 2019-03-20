@@ -2,3 +2,7 @@
     margin-top: -50px;
     margin-left: -40px;
 }
+
+#services-wrapper .services .section-three .main-images{
+    background-position-x: -85px;
+}
