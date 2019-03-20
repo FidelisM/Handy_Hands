@@ -1,3 +1,11 @@
 .alzheimer #content {
     margin-top: 50px;
 }
+
+.alzheimer .image.featured .splash-image {
+    background-position-y: -100px;
+}
+
+.alzheimer #content .banner-images {
+    height: 700px;
+}
