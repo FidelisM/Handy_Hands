@@ -23,7 +23,7 @@ export class Rehab extends React.Component {
                         <p>Recovery from the comfort of your own home with one-on-one support.</p>
                     </header>
                     <a href="#" className="image featured">
-                        <img className="pic-07 banner-images" alt=""/>
+                        <img className="pic-02 banner-images" alt=""/>
                     </a>
                     <p> No matter your age, post-surgery routines usually require rehabilitation. In most cases, the success of
                         your surgery depends heavily on your post-surgery recovery. Why not recover after your surgery in

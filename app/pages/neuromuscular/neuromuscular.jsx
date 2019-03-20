@@ -23,7 +23,7 @@ export class Neuromuscular extends React.Component {
                         <p>Professional caregivers helping you live a rich and rewarding life.</p>
                     </header>
                     <a href="#" className="image featured">
-                        <img className="pic-07 banner-images" alt=""/>
+                        <img className="pic-03 banner-images" alt=""/>
                     </a>
                     <p className="title"> In Home Care for Individuals Living With ALS, MS And Parkinson’s </p>
                     <p> Handy Hands healthcare services specializes in finding professional, compassionate caregivers to

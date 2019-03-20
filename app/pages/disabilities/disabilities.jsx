@@ -23,7 +23,7 @@ export class Disabilities extends React.Component {
                         <p>A support system for you.</p>
                     </header>
                     <a href="#" className="image featured">
-                        <img className="pic-07 banner-images" alt=""/>
+                        <img className="pic-05 banner-images" alt=""/>
                     </a>
                     <p> Living at home can still be an option when you have or support someone with a mental or
                         developmental disability. In-home disability care is a common support system for individuals living

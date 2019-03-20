@@ -26,7 +26,7 @@ export class Compassionate extends React.Component {
                         <img className="pic-07 banner-images" alt=""/>
                     </a>
                     <p>At Hand Makes Healthcare services, we are committed to your happiness, comfort and
-                        wellbeing in the serene environment of your home. When remaining in the comfort of your
+                        well being in the serene environment of your home. When remaining in the comfort of your
                         house is no longer a possibility, our team of caregivers and companions can help bring the
                         feeling and ambiance of home with you.</p>
                     <p>

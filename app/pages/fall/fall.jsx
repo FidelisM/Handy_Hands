@@ -23,7 +23,7 @@ export class Fall extends React.Component {
                         <p>A support system for you.</p>
                     </header>
                     <a href="#" className="image featured">
-                        <img className="pic-07 banner-images" alt=""/>
+                        <img className="pic-01 banner-images" alt=""/>
                     </a>
                     <p className="title"> Preventing Falls at Home </p>
                     <p> There are a few quick ways to help with fall prevention at home. You can tape down any throw

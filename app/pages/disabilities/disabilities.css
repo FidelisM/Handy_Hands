@@ -1,3 +1,11 @@
 .disabilities #content {
     margin-top: 50px;
 }
+
+.disabilities #content .banner-images {
+    height: 780px;
+}
+
+.disabilities .image.featured .splash-image {
+    background-position-y: -25px;
+}

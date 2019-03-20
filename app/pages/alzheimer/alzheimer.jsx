@@ -23,7 +23,7 @@ export class Alzheimer extends React.Component {
                         <p>Caregivers with experience in helping those with Alzheimer’s and dementia.</p>
                     </header>
                     <a href="#" className="image featured">
-                        <img className="pic-07 banner-images" alt=""/>
+                        <img className="pic-04 banner-images" alt=""/>
                     </a>
                     <p> Symptoms of early Alzheimer’s and other forms of dementia typically include difficulty
                         concentrating
