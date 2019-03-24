@@ -121,6 +121,10 @@
     cursor: pointer;
 }
 
+.home-page #header-wrapper li .bold-menu {
+    font-weight: bold;
+}
+
 .home-page #header-wrapper .main-logo {
     height: 250px;
     background-repeat: no-repeat;

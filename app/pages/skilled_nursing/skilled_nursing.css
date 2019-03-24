@@ -1,0 +1,15 @@
+.skilled-nursing #content {
+    margin-top: 50px;
+}
+
+.skilled-nursing .image.featured .splash-image {
+    background-position-y: -40px;
+}
+
+.skilled-nursing #content .banner-images {
+    height: 700px;
+}
+
+.skilled-nursing #content .skill-list {
+     columns: 2;
+}
