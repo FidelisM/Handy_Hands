@@ -127,6 +127,9 @@ class Index extends React.Component {
                                                 <span className="icon"><FontAwesomeIcon icon={faBars} size="lg"/></span>
                                             </DropdownToggle>
                                             <DropdownMenu>
+                                                <DropdownItem onClick={() => this.props.history.push('skilled-nursing')}
+                                                              className="btn-light">Skilled Nursing</DropdownItem>
+                                                <DropdownItem divider={true}/>
                                                 <DropdownItem onClick={() => this.props.history.push('compassionate')}
                                                               className="btn-light">Compassionate Care</DropdownItem>
                                                 <DropdownItem onClick={() => this.props.history.push('home-making')}
