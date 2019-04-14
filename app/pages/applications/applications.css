@@ -1,0 +1,39 @@
+.applications #content {
+    margin-bottom: 0;
+}
+
+.applications .title {
+    font-weight: bold;
+}
+
+.applications .nav-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.applications .page-buttons {
+    margin: 0 1em;
+}
+
+.applications .intro .position,
+.applications .intro .employment,
+.applications .intro .availability {
+    display: flex;
+    justify-content: space-between;
+}
+
+.applications .intro .submit-button-wrapper {
+    overflow: hidden;
+}
+
+.applications .intro .availability_hours #hours {
+    width: 50%;
+    display: inline-block;
+    margin-left: 1em;
+}
+
+/* Basics */
+
+.applications .basic .text-end {
+    /*text-align: end;*/
+}

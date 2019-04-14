@@ -20,6 +20,8 @@ import {AboutUs} from 'Pages/about_us/about_us';
 import {Careers} from 'Pages/carrers/careers';
 import {SkNursing} from 'Pages/skilled_nursing/skilled_nursing';
 
+import Applications from 'Pages/applications/applications';
+
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faBars} from '@fortawesome/free-solid-svg-icons';
 import {HashRouter, Route, Switch, Link, withRouter} from 'react-router-dom';
@@ -203,6 +205,7 @@ class Index extends React.Component {
                                 <Route path="/disabilities" render={() => (<div><Disabilities/></div>)}/>
                                 <Route path="/fall" render={() => (<div><Fall/></div>)}/>
                                 <Route path="/careers" render={() => (<div><Careers/></div>)}/>
+                                <Route path="/applications" render={() => (<div><Applications/></div>)}/>
 
                                 <Route path="/compassionate" render={() => (<div><Compassionate/></div>)}/>
                                 <Route path="/home-making" render={() => (<div><HomeMaking/></div>)}/>

@@ -11,7 +11,8 @@ module.exports = {
         alias: {
             Pages: path.resolve(__dirname, './app/pages'),
             Assets: path.resolve(__dirname, './app/assets'),
-            CSS: path.resolve(__dirname, './app/assets/css')
+            CSS: path.resolve(__dirname, './app/assets/css'),
+            Common: path.resolve(__dirname, './app/common')
         },
         extensions: ['.js', '.jsx']
     },

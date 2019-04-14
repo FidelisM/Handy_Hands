@@ -3,6 +3,7 @@ import './careers.css';
 import ReactDOM from 'react-dom';
 import {Services} from 'Pages/services/services';
 import {Button} from 'reactstrap';
+import {Link} from "react-router-dom";
 
 export class Careers extends React.Component {
     constructor(props) {
@@ -64,7 +65,9 @@ export class Careers extends React.Component {
                         Hands Healthcare services. If you have any questions,
                         please email us or call us.</p>
 
-                    <Button color="primary">Apply Now</Button>
+                    <Link to="/applications">
+                        <Button color="primary" className="apply-btn">Apply Now</Button>
+                    </Link>
                 </article>
 
                 <div className="row features services-wrapper" id="services-wrapper">
