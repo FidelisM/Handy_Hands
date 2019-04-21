@@ -1,0 +1,12 @@
+<div class="container intro">
+    {{#each this}}
+        {{#if this.value}}
+            <div class="row">
+                <span class="title">{{this.title}}</span>
+                <span class="value">
+                    {{#ifEqual this.type "textfield"}}{{this.value}}{{else}}{{this.label}}{{/ifEqual}}
+                </span>
+            </div>
+        {{/if}}
+    {{/each}}
+</div>

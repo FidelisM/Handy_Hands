@@ -26,14 +26,7 @@
     overflow: hidden;
 }
 
-.applications .intro .availability_hours #hours {
+.applications .intro .availability_hours #hours_label {
     width: 50%;
-    display: inline-block;
     margin-left: 1em;
-}
-
-/* Basics */
-
-.applications .basic .text-end {
-    /*text-align: end;*/
 }
