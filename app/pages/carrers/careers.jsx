@@ -2,7 +2,7 @@ import React from 'react';
 import './careers.css';
 import ReactDOM from 'react-dom';
 import {Services} from 'Pages/services/services';
-import {Button} from 'reactstrap';
+import word_app from 'Assets/file/New_Employee_Application.docx'
 
 export class Careers extends React.Component {
     constructor(props) {
@@ -69,7 +69,7 @@ export class Careers extends React.Component {
                         Hands Healthcare services. If you have any questions,
                         please email us or call us.</p>
 
-                    <a className="btn btn-outline-primary btn-lg" href="../New_Employee_Application.docx" download>
+                    <a className="btn btn-outline-primary btn-lg" href={word_app} download>
                         <i className="icon fa-download"/>&nbsp;&nbsp;Application Form</a>
                 </article>
 
