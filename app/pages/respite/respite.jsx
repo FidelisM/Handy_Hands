@@ -22,7 +22,7 @@ export class Respite extends React.Component {
                         <h2>Respite Care</h2>
                         <p>Recharge emotionally and physically.</p>
                     </header>
-                    <a href="#" className="image featured">
+                    <a className="image featured">
                         <img className="pic-03 banner-images" alt=""/>
                     </a>
                     <p>Respite care for the elderly, seniors, disabled adults, and those with special needs can offer

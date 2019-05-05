@@ -22,7 +22,7 @@ export class Rehab extends React.Component {
                         <h2>Post-surgery & Rehabilitation</h2>
                         <p>Recovery from the comfort of your own home with one-on-one support.</p>
                     </header>
-                    <a href="#" className="image featured">
+                    <a className="image featured">
                         <img className="pic-02 banner-images" alt=""/>
                     </a>
                     <p> No matter your age, post-surgery routines usually require rehabilitation. In most cases, the success of

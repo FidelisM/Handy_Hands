@@ -22,7 +22,7 @@ export class Hospice extends React.Component {
                         <h2>Hospice Care</h2>
                         <p>The perfect caregiver for your situation.</p>
                     </header>
-                    <a href="#" className="image featured">
+                    <a className="image featured">
                         <img className="pic-04 banner-images splash-image" alt=""/>
                     </a>
                     <p>Palliative care is any type of care that focuses on making a sick person feel comfortable, rather than

@@ -23,7 +23,7 @@ export class SkNursing extends React.Component {
                         <h2>Skilled Nursing</h2>
                         <p>Skilled, trained, and highly qualified nurses.</p>
                     </header>
-                    <a href="#" className="image featured">
+                    <a className="image featured">
                         <img className="pic-01 banner-images splash-image" alt=""/>
                     </a>
                     <p>We have skilled, trained, and highly qualified nurses who are here to support and assist you in

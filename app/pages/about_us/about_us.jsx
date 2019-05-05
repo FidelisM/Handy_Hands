@@ -20,11 +20,8 @@ export class AboutUs extends React.Component {
                 <article id="content">
                     <header>
                         <h2>Constance Chaduka, BSN </h2>
-                        <p>Director of Nursing for Handy Hands healthcare services.</p>
+                        <p className="director-label">Director of Nursing for Handy Hands healthcare services.</p>
                     </header>
-                    {/*<a href="#" className="image featured">
-                        <img className="pic-04 banner-images splash-image" alt=""/>
-                    </a>*/}
                     <p>
                         Constance brings over 30 years of emergency and critical-care nursing experience that spans two
                         continents and multiple nursing specialties, having worked in several hospitals in the

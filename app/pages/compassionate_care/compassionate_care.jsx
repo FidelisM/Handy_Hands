@@ -22,7 +22,7 @@ export class Compassionate extends React.Component {
                         <h2>Compassionate Care</h2>
                         <p>Caregivers and companions, committed to your happiness.</p>
                     </header>
-                    <a href="#" className="image featured">
+                    <a className="image featured">
                         <img className="pic-07 banner-images" alt=""/>
                     </a>
                     <p>At Hand Makes Healthcare services, we are committed to your happiness, comfort and

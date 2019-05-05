@@ -22,7 +22,7 @@ export class Disabilities extends React.Component {
                         <h2>Adults with disabilities</h2>
                         <p>A support system for you.</p>
                     </header>
-                    <a href="#" className="image featured">
+                    <a className="image featured">
                         <img className="pic-05 banner-images" alt=""/>
                     </a>
                     <p> Living at home can still be an option when you have or support someone with a mental or

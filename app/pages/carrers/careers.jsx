@@ -24,7 +24,7 @@ export class Careers extends React.Component {
                         <p>Your family’s partner in providing quality home healthcare; love and compassion live
                             here.</p>
                     </header>
-                    <a href="#" className="image featured">
+                    <a className="image featured">
                         <img className="pic-career banner-images" alt=""/>
                     </a>
 

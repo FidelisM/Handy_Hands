@@ -23,7 +23,7 @@ export class LiveIn extends React.Component {
                         <h2>Live In & Overnight Care</h2>
                         <p>Always there to help.</p>
                     </header>
-                    <a href="#" className="image featured">
+                    <a className="image featured">
                         <img className="pic-01 banner-images splash-image" alt=""/>
                     </a>
                     <p>Overnight care is about knowing someone is there to help if a loved one needs fluids, snacks, or

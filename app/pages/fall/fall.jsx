@@ -22,7 +22,7 @@ export class Fall extends React.Component {
                         <h2>Fall Prevention & Recovery</h2>
                         <p>A support system for you.</p>
                     </header>
-                    <a href="#" className="image featured">
+                    <a className="image featured">
                         <img className="pic-01 banner-images" alt=""/>
                     </a>
                     <p className="title"> Preventing Falls at Home </p>

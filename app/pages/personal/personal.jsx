@@ -22,7 +22,7 @@ export class Personal extends React.Component {
                         <h2>Personal Care</h2>
                         <p>Clean, comfortable, and looking your best.</p>
                     </header>
-                    <a href="#" className="image featured">
+                    <a className="image featured">
                         <img className="pic-05 banner-images splash-image" alt=""/>
                     </a>
                     <p>Personal care and hygiene services help seniors and disabled adults with

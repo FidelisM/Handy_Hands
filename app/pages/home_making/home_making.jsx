@@ -22,7 +22,7 @@ export class HomeMaking extends React.Component {
                         <h2>Home Making</h2>
                         <p>Creating a life-giving home.</p>
                     </header>
-                    <a href="#" className="image featured">
+                    <a className="image featured">
                         <img className="pic-06 banner-images splash-image" alt=""/>
                     </a>
                     <p>Our homemaking services include but are not limited to:</p>
