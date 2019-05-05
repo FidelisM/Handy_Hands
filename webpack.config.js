@@ -52,6 +52,17 @@ module.exports = {
                 },
             },
             {
+                test: /\.(docx)$/,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        name: './[name].[ext]',
+                        outputPath: './dist/files/',
+                        publicPath: './files/'
+                    }
+                },
+            },
+            {
                 test: /\.(png|jpg|jpeg|gif|ico|svg)$/,
                 use: [
                     {
